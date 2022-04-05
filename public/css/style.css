@@ -1,0 +1,165 @@
+/* CSS général + optimisation lignes */
+@font-face {
+    font-family: "Ubuntu";
+    src: url('../fontfamily/Ubuntu-Light.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Ubuntu, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Début header */
+header {
+    background-color: #1A1A1D;
+    color: white;
+    display: flex;
+}
+
+header div {
+    height: 150px;
+    display: inline-flex;
+}
+
+.logoPage {
+    justify-content: center;
+    align-items: center;
+}
+
+.icones ul {
+    display: flex;
+}
+
+.icones li {
+    flex: 1 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.icones a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Section background image */
+.bg {
+    background-image: url('../img/banner-home.png');
+    height: 46vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Section à propos */
+.apropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    flex: 1;
+    margin-left: 8%;
+    margin-bottom: 10%;
+}
+
+#about {
+    flex: 2;
+    margin: 5%;
+}
+
+/* Section pack */
+
+.pack {
+    background-color: #334D5C;
+    color: white;
+    padding: 30px 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.titrepack {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left : 30%;
+}
+
+.titrepack img {
+    width: 20%; 
+    margin-right: 15px;
+}
+
+.pack ul {
+    display: flex;
+    padding: 0;
+    text-align: center;
+}
+
+/* Section outils */
+
+.outils {
+    color: #393A3B;
+    padding-top: 40px 0;
+    margin-top: 30px;
+}
+
+.titreoutils {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left : 30%;
+}
+
+.titreoutils img {
+    width: 15%;
+    margin-right: 15px;
+}
+
+.outils ul {
+    display: flex;
+    padding: 0;
+    text-align: center;
+}
+
+/* Début footer */
+footer {
+    background-color: #393A3B;
+    color: white;
+    padding-top: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ftr-packs,
+.ftr-outils,
+.ftr-social {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#conditions {
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+}
